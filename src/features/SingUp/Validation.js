@@ -15,7 +15,7 @@ const validations = yup.object().shape({
     .required("This area must be filled"),
   password: yup
     .string()
-    .min(5, "enter a valid email adress...")
+    .min(8, "password must be at least 8 characters")
     .required("This area must be filled"),
   passwordCheck: yup
     .string()
